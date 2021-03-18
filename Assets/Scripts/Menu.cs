@@ -17,19 +17,14 @@ public class Menu : MonoBehaviour
         exitBtn.onClick.AddListener(ExitGame);
     }
 
-    void Update()
-    {
-
-    }
-
     public void StartGame()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Level 1");
     }
 
     public void ExitGame()
     {
-        Application.Quit();
         Debug.Log("Осуществляю выход");
+        Application.Quit();
     }
 }
